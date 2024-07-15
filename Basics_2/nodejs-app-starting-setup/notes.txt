@@ -1,0 +1,26 @@
+Create an image based on Dockerfile (current directory):
+docker build .
+
+Start container from an image:
+docker run <image-hash>
+
+See all processes:
+docker ps -a
+
+Shutdown the container:
+docker stop <container-name>
+
+Run container and publish it on local port:
+docker run -p <local-port>:<docker-expose-port> <image-hash>
+
+Images are layer based, if we change one thing, the other things do not have to be executed again, they will be captured from cache files.
+
+
+Useful commands:
+
+-- List all containers: docker ps -a
+-- Start stopped container: docker start <stopped-container-name> (running in background, detached mode)
+-- docker run <image-hash> (attached mode)
+-- Run image in detached mode: docker run -p <local-port>:<docker-port> -d <image-hash>
+-- Start image in attached mode: docker start -a <name>
+-- Attach detached container: docker attach <container-name>

@@ -1,0 +1,6 @@
+
+-- Remove containers: docker rm <container-name>
+-- Show all images: docker images
+-- Remove images: docker rmi <image-id>
+-- Remove all unused images: docker image prune
+-- Start a container and remove it when it's stops running: docker run -p 8000:80 -rm <image-id>

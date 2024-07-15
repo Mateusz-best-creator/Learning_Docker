@@ -1,0 +1,4 @@
+# Which files should not be copied by COPY command
+node_modules
+Dockerfile
+.git

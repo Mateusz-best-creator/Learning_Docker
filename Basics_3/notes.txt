@@ -1,0 +1,9 @@
+
+Volumes helps us with persisting data and solves the problem of temporary data.
+Volumes are folders on our local machine, which are mounted into containers.
+Volumes persist even if the container is shutdown, any data in that volume is available in the container.
+
+Adding anonymous volume inside dockerfile:
+VOLUME ["...", "..."]
+
+Run container with named volume:
